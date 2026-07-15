@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerse</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Pagina inicial{% endblock %}
+
+{% block content %}
     <h1>ecommerse</h1>
     <h2>Categoria</h2>
     <ul>
-        {% for categorias in categorias %}
+        {% for categoria in categorias %}
          <li>{{categoria.categoria}}</li>
          <li>{{categoria.descricao}}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock%}

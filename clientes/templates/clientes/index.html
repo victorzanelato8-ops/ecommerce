@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{%bloak title %}Clientes {% endbloak %}
+
+{% bloak content%}
+
+ <h2>Clientes</h2>
+ <div>
+    {% for cliente in clientes %}
+    <h4>{{cliente.nome}}</h4>
+    <p>{{cliente.email}}</p>
+    <p>{{cliente_telefone}}</p>
+    <p>{{cliente_endereco}}</p>
+
+    {% endfor %}
+ </div>
+
+ {% endbloak %}
